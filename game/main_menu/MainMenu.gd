@@ -7,7 +7,7 @@ func _ready():
 	play_button.connect("button_down",self,"on_play_down")
 
 func on_play_down():
-	get_tree().change_scene("res://scenes/Level1.tscn")
+	get_tree().change_scene("res://levels/Level1.tscn")
 	pass
 
 
