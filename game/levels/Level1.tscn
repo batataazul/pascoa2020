@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://player/Rabbit.tscn" type="PackedScene" id=1]
 [ext_resource path="res://images/grama_com_borda.png" type="Texture" id=2]
 [ext_resource path="res://levels/Level1.gd" type="Script" id=3]
 [ext_resource path="res://images/coracao_cheio.png" type="Texture" id=4]
 [ext_resource path="res://images/coracao_vazio.png" type="Texture" id=5]
+[ext_resource path="res://enemies/spider/spider.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 794.461, 3.54973 )
@@ -73,7 +74,9 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wall_03"]
 shape = SubResource( 3 )
 
-[node name="wall_04" type="StaticBody2D" parent="Walls"]
+[node name="wall_04" type="StaticBody2D" parent="Walls" groups=[
+"bottom_wall",
+]]
 position = Vector2( 372.598, 1281.58 )
 __meta__ = {
 "_edit_group_": true
@@ -126,3 +129,6 @@ scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 5 )
 normal_map = ExtResource( 4 )
 centered = false
+
+[node name="Spider" parent="." instance=ExtResource( 6 )]
+position = Vector2( 400.843, 70.1476 )

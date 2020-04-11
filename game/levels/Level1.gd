@@ -3,12 +3,16 @@ extends Node2D
 const SCROLL_SPEED = 500
 
 var lives = 3
+onready var rabbit = $Rabbit
+onready var spider = $Spider
 
 func _ready():
 	set_physics_process(true)
 	set_process(true)
+	spider.speed = Vector2(0,0)
+	spider.speed = rabbit.SPEED
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	pass
 
 func _process(delta):
@@ -18,6 +22,7 @@ func _process(delta):
 			bg.position.y -= 3840
 		else:
 			bg.position.y += SCROLL_SPEED*delta
+	lives = rabbit.lives
 	update_heart_UI()
 
 func update_heart_UI():
