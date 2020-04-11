@@ -15,7 +15,9 @@ animations = [ {
 radius = 144.591
 height = 454.311
 
-[node name="Rabbit" type="KinematicBody2D"]
+[node name="Rabbit" type="KinematicBody2D" groups=[
+"player",
+]]
 scale = Vector2( 0.2, 0.2 )
 script = ExtResource( 2 )
 
