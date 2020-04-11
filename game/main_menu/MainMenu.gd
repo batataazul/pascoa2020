@@ -12,10 +12,8 @@ func _ready():
 func on_play_down():
 	lixo = get_tree().change_scene("res://levels/Level1.tscn")
 	pass
+
 func on_quit_down():
 	get_tree().quit()
 	pass
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass

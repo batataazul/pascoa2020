@@ -31,10 +31,11 @@ settings/stdout/print_fps=true
 [display]
 
 window/size/width=720
-window/size/height=1024
+window/size/height=1280
 window/size/resizable=false
 window/size/test_width=405
 window/size/test_height=720
+window/handheld/orientation="portrait"
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
 
