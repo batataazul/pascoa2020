@@ -1,53 +1,83 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://player/Rabbit.tscn" type="PackedScene" id=1]
+[ext_resource path="res://images/grama_com_borda.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 13.8564, 518.598 )
+extents = Vector2( 794.461, 3.54973 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 398.046, 16.9395 )
+extents = Vector2( 901.831, 7.17249 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 501.669, 10 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 526.337, 26.6263 )
 
 [node name="Level1" type="Node2D"]
 
-[node name="Coelho" parent="." instance=ExtResource( 1 )]
-position = Vector2( 357.65, 852.998 )
+[node name="Background" type="Node" parent="."]
 
-[node name="Node" type="Node" parent="."]
+[node name="Background1" type="Sprite" parent="Background"]
+position = Vector2( -112, 0 )
+z_index = -1
+texture = ExtResource( 2 )
+centered = false
 
-[node name="wall_01" type="RigidBody2D" parent="Node"]
+[node name="Background2" type="Sprite" parent="Background"]
+position = Vector2( -112, 1279 )
+z_index = -1
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Background3" type="Sprite" parent="Background"]
+position = Vector2( -112, 2559.12 )
+z_index = -1
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Walls" type="Node" parent="."]
+
+[node name="wall_01" type="StaticBody2D" parent="Walls"]
+position = Vector2( -2.65002, 627.438 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Collision" type="CollisionShape2D" parent="Node/wall_01"]
-position = Vector2( -11.2281, 511.297 )
+[node name="Collision" type="CollisionShape2D" parent="Walls/wall_01"]
+rotation = 1.5708
 shape = SubResource( 1 )
 
-[node name="wall_02" type="RigidBody2D" parent="Node"]
-position = Vector2( 745, 0 )
+[node name="wall_02" type="StaticBody2D" parent="Walls"]
+position = Vector2( 727.101, 637.224 )
+rotation = 1.5708
+scale = Vector2( 0.805342, 1 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Collision" type="CollisionShape2D" parent="Node/wall_02"]
-position = Vector2( -11.2281, 511.297 )
-shape = SubResource( 1 )
+[node name="Collision" type="CollisionShape2D" parent="Walls/wall_02"]
+shape = SubResource( 2 )
 
-[node name="wall_03" type="RigidBody2D" parent="Node"]
+[node name="wall_03" type="StaticBody2D" parent="Walls"]
 position = Vector2( 369.776, -1.42703 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node/wall_03"]
-shape = SubResource( 2 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wall_03"]
+shape = SubResource( 3 )
 
-[node name="wall_04" type="RigidBody2D" parent="Node"]
-position = Vector2( 365.782, 1032.61 )
+[node name="wall_04" type="StaticBody2D" parent="Walls"]
+visible = false
+position = Vector2( 372.598, 1281.58 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node/wall_04"]
-shape = SubResource( 2 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wall_04"]
+shape = SubResource( 4 )
+
+[node name="Rabbit" parent="." instance=ExtResource( 1 )]
+position = Vector2( 379.899, 1135.17 )
