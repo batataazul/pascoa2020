@@ -20,8 +20,7 @@ func _process(delta):
 	for bg in [$Background/Background1,$Background/Background2,$Background/Background3]:
 		if bg.position.y>=1560:
 			bg.position.y -= 3840
-		else:
-			bg.position.y += SCROLL_SPEED*delta
+		bg.position.y += SCROLL_SPEED*delta
 	lives = rabbit.lives
 	update_heart_UI()
 
