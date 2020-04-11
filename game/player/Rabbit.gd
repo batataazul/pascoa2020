@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 const SPEED = 300
+var lixo
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -16,6 +17,6 @@ func _physics_process(delta):
 		velocity.y = -1
 	elif Input.is_action_pressed("ui_down"):
 		velocity.y = 1
-	move_and_collide(SPEED*velocity*delta)
+	lixo = move_and_collide(SPEED*velocity*delta)
 	if Input.is_action_pressed("ui_accept"):
 		pass #tiro de cenoura
