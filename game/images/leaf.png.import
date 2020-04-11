@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cenoura.png-15622d971bf760245d63d13bcc106fb5.stex"
+path="res://.import/leaf.png-ad3b6550e9150c66e48afed8085d912f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/cenoura.png"
-dest_files=[ "res://.import/cenoura.png-15622d971bf760245d63d13bcc106fb5.stex" ]
+source_file="res://images/leaf.png"
+dest_files=[ "res://.import/leaf.png-ad3b6550e9150c66e48afed8085d912f.stex" ]
 
 [params]
 
