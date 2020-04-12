@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/03_jump_2.wav-c7c69f88b445b8a98a2f7a6c2aa065a6.sample"
+
+[deps]
+
+source_file="res://sounds/outros_sons_que_podem_ser_uteis/03_jump_2.wav"
+dest_files=[ "res://.import/03_jump_2.wav-c7c69f88b445b8a98a2f7a6c2aa065a6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

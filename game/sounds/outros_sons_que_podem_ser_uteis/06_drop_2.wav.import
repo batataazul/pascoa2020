@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/06_drop_2.wav-ae1e729191ecdbf45e6a76e652ba856d.sample"
+
+[deps]
+
+source_file="res://sounds/outros_sons_que_podem_ser_uteis/06_drop_2.wav"
+dest_files=[ "res://.import/06_drop_2.wav-ae1e729191ecdbf45e6a76e652ba856d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

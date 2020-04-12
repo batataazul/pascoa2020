@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/27_boom_8.wav-1b43772de3c680fb2f1c09d9495fff19.sample"
+
+[deps]
+
+source_file="res://sounds/outros_sons_que_podem_ser_uteis/27_boom_8.wav"
+dest_files=[ "res://.import/27_boom_8.wav-1b43772de3c680fb2f1c09d9495fff19.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

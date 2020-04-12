@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/fogo.wav-d470c27720ea3b033673a718e3dbc04e.sample"
+
+[deps]
+
+source_file="res://sounds/fogo.wav"
+dest_files=[ "res://.import/fogo.wav-d470c27720ea3b033673a718e3dbc04e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

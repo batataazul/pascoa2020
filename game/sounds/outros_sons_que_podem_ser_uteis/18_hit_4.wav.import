@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/18_hit_4.wav-ae2a66b330f2e21119ecb9e50f20dad4.sample"
+
+[deps]
+
+source_file="res://sounds/outros_sons_que_podem_ser_uteis/18_hit_4.wav"
+dest_files=[ "res://.import/18_hit_4.wav-ae2a66b330f2e21119ecb9e50f20dad4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

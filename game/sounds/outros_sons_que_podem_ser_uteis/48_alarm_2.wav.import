@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/48_alarm_2.wav-681d5f80f7199eef322b3b395243fc4c.sample"
+
+[deps]
+
+source_file="res://sounds/outros_sons_que_podem_ser_uteis/48_alarm_2.wav"
+dest_files=[ "res://.import/48_alarm_2.wav-681d5f80f7199eef322b3b395243fc4c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

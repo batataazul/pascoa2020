@@ -4,17 +4,14 @@ var speed = 0;
 onready var timer = $Timer
 onready var area = $Area2D
 var lixo
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 
-# Called when the node enters the scene tree for the first time.
+var health = 3
+
 func _ready():
 	add_to_group("enemy")
 	set_physics_process(false)
 	timer.connect("timeout",self,"anda")
 	area.connect("body_entered",self,"pegou")
-	
 	pass # Replace with function body.
 
 func _physics_process(delta):
@@ -30,6 +27,7 @@ func anda():
 func pegou(body):
 	if body.is_in_group("player"):
 		body.lives -= 1
+		$AudioStreamPlayer.play()
 		print("você perdeu uma vida, agora tem "+String(body.lives))
 		queue_free()
 		pass
@@ -38,3 +36,9 @@ func pegou(body):
 		print("saiu")
 		pass
 	pass
+
+func receive_damage():
+	health -= 1
+	if health == 0:
+		queue_free()
+

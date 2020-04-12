@@ -1,36 +1,56 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://main_menu/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://images/button_play.png" type="Texture" id=2]
+[ext_resource path="res://images/botao_quit_selecionado.png" type="Texture" id=3]
+[ext_resource path="res://images/botao_credits_selecionado.png" type="Texture" id=4]
+[ext_resource path="res://images/botao_credits.png" type="Texture" id=5]
+[ext_resource path="res://images/button_play_selected.png" type="Texture" id=6]
+[ext_resource path="res://images/botao_quit.png" type="Texture" id=7]
+[ext_resource path="res://images/pintura_menu_coelho_dormindo.png" type="Texture" id=8]
 
 [node name="Node2D" type="Node2D"]
+scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 1 )
 
-[node name="PlayButton" type="Button" parent="."]
-margin_left = 206.342
-margin_top = 468.342
-margin_right = 510.342
-margin_bottom = 533.342
-text = "Play"
+[node name="background" type="Sprite" parent="."]
+position = Vector2( -128.749, -117.045 )
+scale = Vector2( 1.6, 1.8 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="PlayButton" type="TextureButton" parent="."]
+margin_left = 229.827
+margin_top = 616.082
+margin_right = 1029.83
+margin_bottom = 1016.08
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CreditsButton" type="Button" parent="."]
-margin_left = 206.342
-margin_top = 588.342
-margin_right = 510.342
-margin_bottom = 653.342
-text = "Credits"
+[node name="CreditsButton" type="TextureButton" parent="."]
+margin_left = 215.461
+margin_top = 1154.29
+margin_right = 1015.46
+margin_bottom = 1554.29
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="QuitButton" type="Button" parent="."]
-margin_left = 206.342
-margin_top = 704.342
-margin_right = 510.342
-margin_bottom = 769.342
-text = "Quit"
+[node name="QuitButton" type="TextureButton" parent="."]
+margin_left = 207.752
+margin_top = 1707.56
+margin_right = 1007.75
+margin_bottom = 2107.56
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

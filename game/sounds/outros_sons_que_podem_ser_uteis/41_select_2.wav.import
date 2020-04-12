@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/41_select_2.wav-6e960b019c77655d047117679ab2899a.sample"
+
+[deps]
+
+source_file="res://sounds/outros_sons_que_podem_ser_uteis/41_select_2.wav"
+dest_files=[ "res://.import/41_select_2.wav-6e960b019c77655d047117679ab2899a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

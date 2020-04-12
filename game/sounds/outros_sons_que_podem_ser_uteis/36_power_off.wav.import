@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/36_power_off.wav-8494dd8afd22b19565f96a491f712c98.sample"
+
+[deps]
+
+source_file="res://sounds/outros_sons_que_podem_ser_uteis/36_power_off.wav"
+dest_files=[ "res://.import/36_power_off.wav-8494dd8afd22b19565f96a491f712c98.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

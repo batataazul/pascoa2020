@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/22_boom_3.wav-3d05c0b9d5b09ab8734c94c092f5fce9.sample"
+
+[deps]
+
+source_file="res://sounds/outros_sons_que_podem_ser_uteis/22_boom_3.wav"
+dest_files=[ "res://.import/22_boom_3.wav-3d05c0b9d5b09ab8734c94c092f5fce9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

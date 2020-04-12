@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/37_score.wav-1556f41b9cb228a8bceacf3881746bcf.sample"
+
+[deps]
+
+source_file="res://sounds/outros_sons_que_podem_ser_uteis/37_score.wav"
+dest_files=[ "res://.import/37_score.wav-1556f41b9cb228a8bceacf3881746bcf.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

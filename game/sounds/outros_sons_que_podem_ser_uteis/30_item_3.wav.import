@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/30_item_3.wav-e6081147e7c277e301ec3356a75de19a.sample"
+
+[deps]
+
+source_file="res://sounds/outros_sons_que_podem_ser_uteis/30_item_3.wav"
+dest_files=[ "res://.import/30_item_3.wav-e6081147e7c277e301ec3356a75de19a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

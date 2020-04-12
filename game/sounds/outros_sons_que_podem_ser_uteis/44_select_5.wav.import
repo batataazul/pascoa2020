@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/44_select_5.wav-2732f6a72867f37ebacbf881544b87b8.sample"
+
+[deps]
+
+source_file="res://sounds/outros_sons_que_podem_ser_uteis/44_select_5.wav"
+dest_files=[ "res://.import/44_select_5.wav-2732f6a72867f37ebacbf881544b87b8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
