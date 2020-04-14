@@ -27,6 +27,7 @@ Global="*res://Global.gd"
 
 settings/fps/force_fps=60
 settings/stdout/print_fps=true
+gdscript/warnings/return_value_discarded=false
 
 [display]
 

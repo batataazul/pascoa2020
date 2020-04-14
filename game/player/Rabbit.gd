@@ -27,9 +27,12 @@ func _physics_process(delta):
 		new_carrot.global_position = self.global_position + Vector2(0,-150)
 		get_parent().add_child(new_carrot)
 	if collision:
-		if collision.collider.is_in_group("enemy"):
+		if collision.collider.is_in_group("enemy") and not($DamageAnimationPlayer.is_playing()):
 			lives -= 1
+			$DamageAnimationPlayer.play("damage")
 			$DamageRabbitAudioStreamPlayer.play()
 	if lives <= 0:
 		print("Você morreu :(")
-		queue_free()
+
+func receive_damage():
+	pass
