@@ -9,7 +9,6 @@ var lives = 3
 func _ready():
 	carrot_node = load("res://player/Carrot.tscn")
 	set_physics_process(true)
-	add_to_group("player")
 
 func _physics_process(delta):
 	var velocity = Vector2(0,0)

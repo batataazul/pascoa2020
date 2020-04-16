@@ -1,11 +1,13 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://player/Rabbit.tscn" type="PackedScene" id=1]
 [ext_resource path="res://images/grama_com_borda.png" type="Texture" id=2]
 [ext_resource path="res://levels/Level1.gd" type="Script" id=3]
 [ext_resource path="res://images/coracao_cheio.png" type="Texture" id=4]
 [ext_resource path="res://images/coracao_vazio.png" type="Texture" id=5]
+[ext_resource path="res://images/botao_pause.png" type="Texture" id=6]
 [ext_resource path="res://sounds/level1.ogg" type="AudioStream" id=7]
+[ext_resource path="res://images/botao_pause_selecionado.png" type="Texture" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 794.461, 3.54973 )
@@ -45,7 +47,7 @@ centered = false
 [node name="Walls" type="Node" parent="."]
 
 [node name="wall_01" type="StaticBody2D" parent="Walls"]
-position = Vector2( -2.65002, 627.438 )
+position = Vector2( -3.50798, -0.0338593 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -66,7 +68,7 @@ __meta__ = {
 shape = SubResource( 2 )
 
 [node name="wall_03" type="StaticBody2D" parent="Walls"]
-position = Vector2( 369.776, -1.42703 )
+position = Vector2( 369.776, -8.42703 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -77,7 +79,7 @@ shape = SubResource( 3 )
 [node name="wall_04" type="StaticBody2D" parent="Walls" groups=[
 "bottom_wall",
 ]]
-position = Vector2( 372.598, 1281.58 )
+position = Vector2( 372.598, 1284.77 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -134,19 +136,35 @@ centered = false
 stream = ExtResource( 7 )
 autoplay = true
 
-[node name="SpawnPoints" type="Node" parent="."]
+[node name="Enemies" type="Node" parent="."]
 
-[node name="Point_0" type="Node2D" parent="SpawnPoints"]
-position = Vector2( 75.3815, 76.8742 )
+[node name="PauseUI" type="Node2D" parent="."]
+scale = Vector2( 0.2, 0.2 )
+z_index = 1
 
-[node name="Point_1" type="Node2D" parent="SpawnPoints"]
-position = Vector2( 210.382, 76.8742 )
+[node name="PauseButton" type="TextureButton" parent="PauseUI"]
+margin_left = 3195.06
+margin_top = 5.01563
+margin_right = 3595.06
+margin_bottom = 405.016
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 8 )
+texture_focused = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Point_2" type="Node2D" parent="SpawnPoints"]
-position = Vector2( 366.382, 76.8742 )
+[node name="Panel" type="Panel" parent="PauseUI"]
+visible = false
+margin_left = 498.691
+margin_top = 1538.26
+margin_right = 3179.69
+margin_bottom = 4384.26
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Point_3" type="Node2D" parent="SpawnPoints"]
-position = Vector2( 515.215, 76.8742 )
-
-[node name="Point_4" type="Node2D" parent="SpawnPoints"]
-position = Vector2( 649.381, 76.8742 )
+[node name="LevelEndTimer" type="Timer" parent="."]
+wait_time = 30.0
+autostart = true
